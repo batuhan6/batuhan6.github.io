@@ -2,6 +2,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #ecf0f1; /* Hafif gri arka plan ekledik */
 }
 
 header {
@@ -21,10 +22,10 @@ header {
 nav ul {
     list-style-type: none;
     padding: 0;
+    display: flex;
 }
 
 nav li {
-    display: inline;
     margin-right: 20px;
 }
 
@@ -41,6 +42,19 @@ nav a:hover {
 
 section {
     padding: 20px;
+}
+
+/* Renkli arka plan ekledik */
+#anasayfa {
+    background-color: #ecf0f1;
+}
+
+#psikoloji {
+    background-color: #d5f5e3;
+}
+
+#mutluluk {
+    background-color: #fdebd0;
 }
 
 footer {
