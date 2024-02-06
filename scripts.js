@@ -1,21 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Sayfa yüklendiğinde çalışacak kodları buraya ekleyebilirsiniz.
+    // Sayfa yüklendiğinde başlıklara yavaşça kayma
+    document.querySelectorAll('section h2').forEach(title => {
+        title.addEventListener('mouseover', function () {
+            this.style.transform = "translateX(10px)";
+            this.style.transition = "transform 0.3s ease-in-out";
+        });
 
-    // Başlıklara tıklama olayını dinle
-    document.querySelectorAll('nav a').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-
-            // Hedef elementin ID'sini al
-            const targetId = this.getAttribute('href').substring(1);
-
-            // Hedef elementi bul
-            const targetElement = document.getElementById(targetId);
-
-            // Hedef elemente yavaşça kaydır
-            targetElement.scrollIntoView({
-                behavior: 'smooth'
-            });
+        title.addEventListener('mouseout', function () {
+            this.style.transform = "translateX(0)";
         });
     });
 });
+
