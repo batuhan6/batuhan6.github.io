@@ -12,4 +12,13 @@ document.addEventListener("DOMContentLoaded", function () {
             this.style.color = "#000"; // Rengi geri döndür
         });
     });
+
+    // Alt menülerin üzerine gelindiğinde ve üzerinden çıkıldığında olayları
+    $("nav data-hover='sub-menu' li").mouseover(function () {
+        $(this).css("background-color", "#ddd");
+    });
+
+    $("nav data-hover='sub-menu' li").mouseout(function () {
+        $(this).css("background-color", "initial");
+    });
 });
