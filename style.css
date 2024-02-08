@@ -15,6 +15,26 @@ header {
     align-items: center;
 }
 
+.sub-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  z-index: 10;
+}
+
+.sub-menu li {
+  list-style: none;
+  padding: 5px;
+}
+
+.sub-menu li a {
+  color: #333;
+  text-decoration: none;
+}
+
+
 .logo h1 {
     margin: 0;
 }
