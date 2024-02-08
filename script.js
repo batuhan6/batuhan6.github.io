@@ -13,24 +13,3 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
-
-
- // Submenu'ların üzerine gelindiğinde belirginleşme
-    document.querySelectorAll('.has-sub-menu').forEach(menuItem => {
-        menuItem.addEventListener('mouseover', function () {
-            this.style.backgroundColor = "#ddd"; // Örnek bir belirginleştirme
-        });
-
-        menuItem.addEventListener('mouseout', function () {
-            this.style.backgroundColor = "initial";
-        });
-    });
-});
-
-$(document).ready(function() {
-    $("nav").on("mouseenter", ".has-sub-menu", function() {
-        $(this).children(".sub-menu").stop(true, true).slideDown(200);
-    }).on("mouseleave", ".has-sub-menu", function() {
-        $(this).children(".sub-menu").stop(true, true).slideUp(200);
-    });
-});
