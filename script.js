@@ -13,3 +13,12 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+
+$(document).ready(function() {
+  $("nav").on("mouseenter", ".has-sub-menu", function() {
+    $(this).children(".sub-menu").stop(true, true).slideDown(200);
+  }).on("mouseleave", ".has-sub-menu", function() {
+    $(this).children(".sub-menu").stop(true, true).slideUp(200);
+  });
+});
