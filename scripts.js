@@ -14,3 +14,11 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+
+function showSubmenu(category) {
+    document.getElementById(`${category}SubMenu`).style.display = 'block';
+}
+
+function hideSubmenu(category) {
+    document.getElementById(`${category}SubMenu`).style.display = 'none';
+}
