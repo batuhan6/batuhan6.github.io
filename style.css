@@ -25,7 +25,7 @@ nav ul {
     padding: 0;
     display: flex;
 }
-
+/*
 nav li {
     margin-right: 20px;
 }
@@ -38,7 +38,25 @@ nav a {
 }
 
 nav a:hover {
-    color: #ffcc00; /* Sarı tonu */
+    color: #ffcc00; 
+}
+
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+}
+
+ul{
+    list-style: none;
+    background: #228c2e;
+}
+
+ul li {
+    display: incline-block;
+    position: relative;
 }
 
 section {
