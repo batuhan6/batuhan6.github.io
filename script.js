@@ -11,7 +11,15 @@ document.addEventListener("DOMContentLoaded", function () {
             this.style.transform = "translateX(0)";
             this.style.color = "#000"; // Rengi geri döndür
         });
-    });
 
-    
+        var cornerImage = document.getElementById("corner-image");
+
+        cornerImage.addEventListener("mouseenter", function () {
+            cornerImage.style.transform = "rotate(360deg)";
+        });
+
+        cornerImage.addEventListener("mouseleave", function () {
+            cornerImage.style.transform = "rotate(0deg)";
+        });
+    });
 });
