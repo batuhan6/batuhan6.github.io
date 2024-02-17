@@ -21,31 +21,6 @@ header {
 }
 
 
-
-/*
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-}
-
-nav li {
-    margin-right: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    transition: color 0.3s ease-in-out;
-}
-
-nav a:hover {
-    color: #ffcc00; 
-}
-
-*/
-
 * {
     padding: 0;
     margin: 0;
@@ -140,10 +115,12 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#mutluluk {
+
+#creativity {
     background-color: #ffe4b5; /* Moccasin rengi */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position:relative;
 }
 
 footer {
