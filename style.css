@@ -35,7 +35,6 @@ ul{
 ul li {
     display: inline-block;
     position: relative;
-    width: 200px;
 }
 
 ul li a{
@@ -174,7 +173,7 @@ footer {
     ul li {
         display: inline-block;
         position: relative;
-        width: 210px;
+        width: 215px;
     }
     
     ul li a{
